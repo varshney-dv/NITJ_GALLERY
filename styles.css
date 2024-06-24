@@ -60,19 +60,26 @@ body{
   bottom: 0;
   left: 0;
   padding: 10%;
-  padding-bottom: 10%;
+  padding-bottom: 20%;
   width: 100%;
   height: 20%;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   color: #fff;
   opacity: 0;
   border-radius: 0 0 10px 10px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
   transition: 0.3s;
+  text-shadow: 2px 2px  rgb(3, 198, 247);
 }
 
 .card:hover figcaption {
   opacity: 1;
   transform: scale(1.03);
 } 
+@media (max-width:600px) {
+  .card figcaption{
+    font-size: 11px;
+    text-shadow: 1px 1px  rgb(3, 198, 247);
+  }
+}
